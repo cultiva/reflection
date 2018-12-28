@@ -1,0 +1,2 @@
+API_TOKEN = ""
+DEFAULT_REPLY = "HEY!!!"
