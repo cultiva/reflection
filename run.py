@@ -7,14 +7,14 @@ from slackbot.bot import respond_to
 from slackbot.bot import listen_to
 import re
 
+# この部分がプラグイン追加
+@respond_to('I love you')
+def love(message):
+    message.reply('I love you too!')
+
 def main():
     bot = Bot()
     bot.run()
-
-    # ここから追加プラグイン
-    @respond_to('I love you')
-    def love(message):
-        message.reply('I love you too!')
 
 if __name__ == "__main__":
     main()
