@@ -12,6 +12,8 @@ import re
 import os
 from slackbot.utils import download_file, create_tmp_file
 
+# sleepメソッド用
+from time import sleep
 
 # この部分がI love youプラグイン追加
 @respond_to('I love you')
@@ -21,11 +23,11 @@ def love(message):
 # この部分が振り返り文プラグイン追加
 @respond_to('今日の分')
 def upload_content(message):
-    time.sleep(0.5)
+    sleep(0.5)
     message.reply('How was your day, today, @cultiva?')
-    time.sleep(0.5)
+    sleep(0.5)
     message.reply('それじゃあ、今日の振り返りを始めようか。')
-    time.sleep(0.5)
+    sleep(0.5)
     # message.channel.upload_content(slack_filename, content,
     #                                initial_comment='')
     message.reply('これがculivaのライフパーパスだね。')
