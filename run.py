@@ -1,16 +1,30 @@
 from slackbot.bot import Bot
 
-# プラグイン追加用に読み込み
+# 以下、I love you プラグイン追加用に読み込み
 # リファレンスはhttps://github.com/lins05/slackbot#create-plugins
 
 from slackbot.bot import respond_to
 from slackbot.bot import listen_to
 import re
 
-# この部分がプラグイン追加
+
+# 以下、振り返り文プラグイン追加用に読み込み
+import os
+from slackbot.utils import download_file, create_tmp_file
+
+
+# この部分がI love youプラグイン追加
 @respond_to('I love you')
 def love(message):
     message.reply('I love you too!')
+
+# この部分が振り返り文プラグイン追加
+@respond_to('今日の分')
+def upload_content(message):
+    # message.channel.upload_content(slack_filename, content,
+    #                                initial_comment='')
+    content=u"雄大な振れ幅を活かして、\n人類の可能性を拡げるコロンブス"
+    message.channel.upload_content('content.txt', content)
 
 def main():
     bot = Bot()
