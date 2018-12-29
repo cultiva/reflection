@@ -23,11 +23,11 @@ def love(message):
 # この部分が振り返り文プラグイン追加
 @respond_to('今日の分')
 def upload_content(message):
-    time.sleep(1)
+    sleep(1)
     message.reply('How was your day, today, @cultiva?')
-    time.sleep(1)
+    sleep(1)
     message.reply('それじゃあ、今日の振り返りを始めようか。')
-    time.sleep(1)
+    sleep(1)
     # message.channel.upload_content(slack_filename, content,
     #                                initial_comment='')
     message.reply('これがculivaのライフパーパスだね。')
