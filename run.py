@@ -26,11 +26,11 @@ def upload_content(message):
     sleep(1)
     message.reply('How was your day today?')
     sleep(1)
-    message.reply('それじゃあ、今日の振り返りを始めようか。')　#sendに切り替えられないか検討
+    message.reply('それじゃあ、今日の振り返りを始めようか。') #sendに切り替えられないか検討
     sleep(1)
     # message.channel.upload_content(slack_filename, content,
     #                                initial_comment='')
-    message.reply('これがculivaのライフパーパスだね。')　#sendに切り替えられないか検討
+    message.reply('これがculivaのライフパーパスだね。') #sendに切り替えられないか検討
     content=u"雄大な振れ幅を活かして、\n人類の可能性を拡げるコロンブス"
     message.channel.upload_content('content.txt', content)
 
