@@ -11,10 +11,10 @@ def main():
     bot = Bot()
     bot.run()
 
+    # ここから追加プラグイン
+    @respond_to('I love you')
+    def love(message):
+        message.reply('I love you too!')
+
 if __name__ == "__main__":
     main()
-
-# ここから追加プラグイン
-@respond_to('I love you')
-def love(message):
-    message.reply('I love you too!')
