@@ -34,7 +34,7 @@ def upload_content(message):
     content=u"雄大な振れ幅を活かして、\n人類の可能性を拡げるコロンブス"
     message.channel.upload_content('content.txt', content)
 
-    expand_action = input('雄大な振れ幅を出すためのアクションをとれたかい？')
+    # expand_action = input('雄大な振れ幅を出すためのアクションをとれたかい？')
 
 
 
