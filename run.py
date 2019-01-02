@@ -37,10 +37,10 @@ def upload_content(message):
     message.reply('じゃあ、1つ目の質問だ。雄大な振れ幅を出すためのアクションをとれたかい？')
 
     #何かを入力したら
-    @listen_to('.*'):
-    def second_question
+    @listen_to('.*')
+    def second_question():
         message.reply('なるほど、なるほど、2つ目の質問だ。奥さんのことは愛してるかい？')
-    
+
 
 def main():
     bot = Bot()
