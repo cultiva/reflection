@@ -24,9 +24,9 @@ def love(message):
 @respond_to('今日の分')
 def upload_content(message):
     sleep(1)
-    message.reply('How was your day today?')
+    message.send('How was your day today?')
     sleep(1)
-    message.reply('それじゃあ、今日の振り返りを始めようか。') #sendに切り替えられないか検討
+    message.send('それじゃあ、今日の振り返りを始めようか。')
     sleep(1)
     # message.channel.upload_content(slack_filename, content,
     #                                initial_comment='')
