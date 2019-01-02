@@ -34,9 +34,13 @@ def upload_content(message):
     content=u"雄大な振れ幅を活かして、\n人類の可能性を拡げるコロンブス"
     message.channel.upload_content('content.txt', content)
 
-    # expand_action = input('雄大な振れ幅を出すためのアクションをとれたかい？')
+    message.reply('じゃあ、1つ目の質問だ。雄大な振れ幅を出すためのアクションをとれたかい？')
 
-
+    #何かを入力したら
+    @listen_to('.*'):
+    def second_question
+        message.reply('なるほど、なるほど、2つ目の質問だ。奥さんのことは愛してるかい？')
+    
 
 def main():
     bot = Bot()
