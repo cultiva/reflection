@@ -38,7 +38,7 @@ def upload_content(message):
 
     #何かを入力したら
     @listen_to('.*')
-    def second_question():
+    def second_question(second_answer):
         message.reply('なるほど、なるほど、2つ目の質問だ。奥さんのことは愛してるかい？')
 
 
