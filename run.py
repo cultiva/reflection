@@ -41,7 +41,7 @@ def upload_content(message):
     def second_question(second_answer):
         message.reply('なるほど、なるほど、2つ目の質問だ。奥さんのことは愛してるかい？')
 
-    break
+        return
 
 def main():
     bot = Bot()
