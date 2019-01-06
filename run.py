@@ -38,15 +38,15 @@ def upload_content(message):
 
 @respond_to('2つ目')
 def second_question(second_answer):
-        message.reply('オッケー、2つ目の質問だ。その振れ幅を何かに活かすことはできたかい？')
+        second_answer.reply('オッケー、2つ目の質問だ。その振れ幅を何かに活かすことはできたかい？')
 
 @respond_to('3つ目')
-def second_question(second_answer):
-        message.reply('それでは、3つ目の質問だ。それは誰かの可能性を拡げるものかい？')
+def third_question(third_answer):
+        third_answer.reply('それでは、3つ目の質問だ。それは誰かの可能性を拡げるものかい？')
 
 @respond_to('4つ目')
-def second_question(second_answer):
-        message.reply('そうかい。では、最後の質問だ。コロンブスらしい人間力を持っていたかい？')
+def fourth_question(fourth_answer):
+        fourth_answer.reply('そうかい。では、最後の質問だ。コロンブスらしい人間力を持っていたかい？')
 
 
 def main():
